@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>IDESourceControlProjectFavoriteDictionaryKey</key>
+	<false/>
+	<key>IDESourceControlProjectIdentifier</key>
+	<string>6F3B4977-CD4C-41A1-BC80-78A9989EA47C</string>
+	<key>IDESourceControlProjectName</key>
+	<string>DurakMobile</string>
+	<key>IDESourceControlProjectOriginsDictionary</key>
+	<dict>
+		<key>9604E7EB-3368-4755-9014-06445FE99319</key>
+		<string>https://bitbucket.org/AChernywev/durakmobile.git</string>
+	</dict>
+	<key>IDESourceControlProjectPath</key>
+	<string>Refactored/DurakMobile/DurakMobile.xcodeproj/project.xcworkspace</string>
+	<key>IDESourceControlProjectRelativeInstallPathDictionary</key>
+	<dict>
+		<key>9604E7EB-3368-4755-9014-06445FE99319</key>
+		<string>../../../..</string>
+	</dict>
+	<key>IDESourceControlProjectURL</key>
+	<string>https://bitbucket.org/AChernywev/durakmobile.git</string>
+	<key>IDESourceControlProjectVersion</key>
+	<integer>110</integer>
+	<key>IDESourceControlProjectWCCIdentifier</key>
+	<string>9604E7EB-3368-4755-9014-06445FE99319</string>
+	<key>IDESourceControlProjectWCConfigurations</key>
+	<array>
+		<dict>
+			<key>IDESourceControlRepositoryExtensionIdentifierKey</key>
+			<string>public.vcs.git</string>
+			<key>IDESourceControlWCCIdentifierKey</key>
+			<string>9604E7EB-3368-4755-9014-06445FE99319</string>
+			<key>IDESourceControlWCCName</key>
+			<string>DurakMobile</string>
+		</dict>
+	</array>
+</dict>
+</plist>
