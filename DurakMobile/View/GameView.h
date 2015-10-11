@@ -8,12 +8,6 @@
 
 #import <UIKit/UIKit.h>
 
-@protocol GameViewDataSource <NSObject>
-
-
-@end
-
 @interface GameView : UIView
-@property (nonatomic, weak) id<GameViewDataSource>dataSource;
 
 @end

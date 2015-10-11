@@ -8,6 +8,11 @@
 
 #import "CardView.h"
 
+@interface CardView ()
+@property (nonatomic, weak) UIImageView *       cardImageView;
+
+@end
+
 @implementation CardView
 
 #pragma mark - initialization
@@ -16,31 +21,32 @@
     self = [super initWithFrame: [Constants defaultCardViewBounds]];
     if (self != nil)
     {
-        self.dataSource = dataSource;
+        _dataSource = dataSource;
         
-        _cardImageView = [UIImageView new];
-        [self addSubview: _cardImageView];
+        UIImageView *imageView = [UIImageView new];
+        [self addSubview: imageView];
+        _cardImageView = imageView;
         
         _cardImageView.image            = [self.dataSource imageForState:CardViewStateClosed];
         _cardImageView.highlightedImage = [self.dataSource imageForState:CardViewStateOpen];
         
-        self.state = CardViewStateOpen;
+        _state = CardViewStateOpen;
     }
     return self;
 }
 
 #pragma mark - properties
-- (void) setState: (CardViewState) state
+- (void)setState:(CardViewState)state
 {
-    _state                     = state;
-    _cardImageView.highlighted = (state == CardViewStateOpen);
+    _state = state;
+    self.cardImageView.highlighted = (state == CardViewStateOpen);
 }
 
 #pragma mark - layout
-- (void) layoutSubviews
+- (void)layoutSubviews
 {
-    CGRect bounds        = self.bounds;
-    _cardImageView.frame = bounds;
+    CGRect bounds = self.bounds;
+    self.cardImageView.frame = bounds;
 }
 
 @end

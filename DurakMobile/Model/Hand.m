@@ -8,10 +8,12 @@
 
 #import "Hand.h"
 
+@interface Hand()
+@property (nonatomic, strong) NSMutableArray *cards;
+
+@end
+
 @implementation Hand
-{
-    NSMutableArray *    _cards;
-}
 
 #pragma mark - initialization
 - (id)init
@@ -26,24 +28,24 @@
 #pragma mark - properties methods
 - (NSUInteger)cardsCount
 {
-    return _cards.count;
+    return self.cards.count;
 }
 
 #pragma mark - public working methods
-- (void) removeAllCards
+- (void)removeAllCards
 {
-    [_cards removeAllObjects];
+    [self.cards removeAllObjects];
 }
 
-- (void)    addCard: (Card *) card
+- (void)addCard:(Card *)card
 {
-    [_cards addObject:card];
+    [self.cards addObject:card];
 }
 
-- (Card *) cardAtIndex: (NSUInteger) index;
+- (Card *)cardAtIndex:(NSUInteger)index;
 {
-    if(index < _cards.count) {
-        return [_cards objectAtIndex:index];
+    if(index < self.cards.count) {
+        return [self.cards objectAtIndex:index];
     }
     else {
         return nil;
@@ -54,17 +56,16 @@
 {
     NSSortDescriptor *suitDescriptor = [[NSSortDescriptor alloc]initWithKey:@"cardSuit" ascending:YES];
     NSSortDescriptor *valueDescriptor = [[NSSortDescriptor alloc]initWithKey:@"cardValue" ascending:YES];
-    [_cards sortUsingDescriptors:@[suitDescriptor, valueDescriptor]];
+    [self.cards sortUsingDescriptors:@[suitDescriptor, valueDescriptor]];
 }
 
 #pragma mark - <HandViewDataSource>
-
-- (NSUInteger) numberOfCardsInHandView:(HandView *)handView
+- (NSUInteger)numberOfCardsInHandView:(HandView *)handView
 {
     return self.cardsCount;
 }
 
-- (CardView *) handView: (HandView *) handView cardViewAtIndex:(NSUInteger)index
+- (CardView *)handView:(HandView *)handView cardViewAtIndex:(NSUInteger)index
 {
     Card *card = [self cardAtIndex: index];
     CardView *cardView = [[CardView alloc] initWithDataSource:card];

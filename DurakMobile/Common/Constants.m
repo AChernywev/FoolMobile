@@ -10,42 +10,38 @@
 
 @implementation Constants
 
-#pragma mark -
-#pragma mark Card Views
-
-+ (CGFloat) defaultCardViewWidth
+#pragma mark - Card Views
++ (CGFloat)defaultCardViewWidth
 {
     return 225 * 0.3;
 }
 
-+ (CGFloat) defaultCardViewHeight
++ (CGFloat)defaultCardViewHeight
 {
     return 315 * 0.3;
 }
 
-+ (CGSize) defaultCardViewSize
++ (CGSize)defaultCardViewSize
 {
     return CGSizeMake([self defaultCardViewWidth],
                       [self defaultCardViewHeight]);
 }
 
-+ (CGRect) defaultCardViewBounds
++ (CGRect)defaultCardViewBounds
 {
     CGSize size = [self defaultCardViewSize];
     return CGRectMake(0.0, 0.0, size.width, size.height);
 }
 
 #pragma mark - Deck views
-+ (UIFont *) deckViewCardCountFont
++ (UIFont *)deckViewCardCountFont
 {
     CGFloat fontSize = 12.0;
     return [UIFont boldSystemFontOfSize: fontSize];
 }
 
-#pragma mark -
-#pragma mark Hand Views
-
-+ (CGFloat) handViewCardsOffsetXForCardsCount:(NSUInteger)cardsCount
+#pragma mark - Hand Views
++ (CGFloat)handViewCardsOffsetXForCardsCount:(NSUInteger)cardsCount
 {
     if(cardsCount < 10) {
         return 15.0;
@@ -58,7 +54,7 @@
     }
 }
 
-+ (CGFloat) handViewCardsDeltaAngleForCardsCount:(NSUInteger)cardsCount
++ (CGFloat)handViewCardsDeltaAngleForCardsCount:(NSUInteger)cardsCount
 {
     float angle = 0;
     if(cardsCount < 10) {
@@ -73,18 +69,18 @@
     return M_PI / 180.0 * angle;
 }
 
-+ (CGFloat) aiPlayerHandViewScale
++ (CGFloat)aiPlayerHandViewScale
 {
     return 0.35;
 }
 
-+ (CGFloat) aiPlayerHandViewOffset
++ (CGFloat)aiPlayerHandViewOffset
 {
     return 30.0;
 }
 
 #pragma mark - Game 
-+ (NSUInteger) numberOfCardsToDeal
++ (NSUInteger)numberOfCardsToDeal
 {
     return 6;
 }

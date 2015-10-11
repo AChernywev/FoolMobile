@@ -9,11 +9,18 @@
 #import "GameViewController.h"
 
 #import "Model.h"
+#import "DeckView.h"
+#import "HandView.h"
+
+@interface GameViewController()
+@property (nonatomic, strong) Model *model;
+@property (nonatomic, weak) IBOutlet DeckView * deckView;
+@property (nonatomic, weak) IBOutlet HandView * humanHand;
+@property (nonatomic, weak) IBOutlet HandView * aiHandView;
+
+@end
 
 @implementation GameViewController
-{
-    Model * _model;
-}
 
 - (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil
 {
@@ -28,18 +35,18 @@
 - (void)viewDidLoad
 {
     [super viewDidLoad];
-    [_model beginNewGame];
+    [self.model beginNewGame];
     
-    _deckView.dataSource = _model.deck;
-    [_deckView reloadData];
+    self.deckView.dataSource = self.model.deck;
+    [self.deckView reloadData];
     
-    _humanHand.dataSource = _model.humanPlayer.hand;
-    _humanHand.cardsState = CardViewStateOpen;
-    [_humanHand reloadData];
+    self.humanHand.dataSource = self.model.humanPlayer.hand;
+    self.humanHand.cardsState = CardViewStateOpen;
+    [self.humanHand reloadData];
     
-    _aiHandView.transform = CGAffineTransformMakeRotation(M_PI);
-    _aiHandView.dataSource = _model.aiPlayer.hand;
-    _aiHandView.cardsState = CardViewStateClosed;
-    [_aiHandView reloadData];
+    self.aiHandView.transform = CGAffineTransformMakeRotation(M_PI);
+    self.aiHandView.dataSource = self.model.aiPlayer.hand;
+    self.aiHandView.cardsState = CardViewStateClosed;
+    [self.aiHandView reloadData];
 }
 @end

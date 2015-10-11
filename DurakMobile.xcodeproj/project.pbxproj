@@ -7,75 +7,75 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		100EA4DE1A00C36400DF1413 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 100EA4DD1A00C36400DF1413 /* Images.xcassets */; };
 		5A36ECFC181160650095CD38 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5A36ECFB181160650095CD38 /* Foundation.framework */; };
 		5A36ECFE181160650095CD38 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5A36ECFD181160650095CD38 /* CoreGraphics.framework */; };
 		5A36ED00181160650095CD38 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5A36ECFF181160650095CD38 /* UIKit.framework */; };
-		5A36ED06181160650095CD38 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 5A36ED04181160650095CD38 /* InfoPlist.strings */; };
-		5A36ED08181160650095CD38 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 5A36ED07181160650095CD38 /* main.m */; };
 		5A36ED0C181160650095CD38 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 5A36ED0B181160650095CD38 /* AppDelegate.m */; };
-		5A36ED30181160FA0095CD38 /* Player.m in Sources */ = {isa = PBXBuildFile; fileRef = 5A36ED2F181160FA0095CD38 /* Player.m */; };
-		5A36ED341811617C0095CD38 /* Hand.m in Sources */ = {isa = PBXBuildFile; fileRef = 5A36ED331811617C0095CD38 /* Hand.m */; };
-		5A36ED38181161C60095CD38 /* AIPlayer.m in Sources */ = {isa = PBXBuildFile; fileRef = 5A36ED37181161C60095CD38 /* AIPlayer.m */; };
-		5A36ED3C1811637A0095CD38 /* Card.m in Sources */ = {isa = PBXBuildFile; fileRef = 5A36ED3B1811637A0095CD38 /* Card.m */; };
-		5A36ED40181165680095CD38 /* Deck.m in Sources */ = {isa = PBXBuildFile; fileRef = 5A36ED3F181165680095CD38 /* Deck.m */; };
-		5A36ED44181167D10095CD38 /* CardView.m in Sources */ = {isa = PBXBuildFile; fileRef = 5A36ED43181167D10095CD38 /* CardView.m */; };
-		5A36ED481811690F0095CD38 /* Constants.m in Sources */ = {isa = PBXBuildFile; fileRef = 5A36ED471811690F0095CD38 /* Constants.m */; };
-		5A36ED4C18116A0A0095CD38 /* DeckView.m in Sources */ = {isa = PBXBuildFile; fileRef = 5A36ED4B18116A0A0095CD38 /* DeckView.m */; };
-		5A36ED5118116DC70095CD38 /* UIView+Geometry.m in Sources */ = {isa = PBXBuildFile; fileRef = 5A36ED5018116DC70095CD38 /* UIView+Geometry.m */; };
-		5A36ED5518116EB20095CD38 /* Model.m in Sources */ = {isa = PBXBuildFile; fileRef = 5A36ED5418116EB20095CD38 /* Model.m */; };
-		5A36ED59181171F40095CD38 /* HumanPlayer.m in Sources */ = {isa = PBXBuildFile; fileRef = 5A36ED58181171F40095CD38 /* HumanPlayer.m */; };
-		5A36ED5C181175780095CD38 /* GameViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5A36ED5B181175780095CD38 /* GameViewController.m */; };
-		5A36ED61181175970095CD38 /* BaseViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5A36ED60181175970095CD38 /* BaseViewController.m */; };
-		5A36ED63181175B60095CD38 /* GameViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 5A36ED62181175B60095CD38 /* GameViewController.xib */; };
-		5A36ED6718117A010095CD38 /* HandView.m in Sources */ = {isa = PBXBuildFile; fileRef = 5A36ED6618117A010095CD38 /* HandView.m */; };
-		FA2D8B1D181246D6003597EC /* GameView.m in Sources */ = {isa = PBXBuildFile; fileRef = FA2D8B1C181246D6003597EC /* GameView.m */; };
+		FAE419461BCA891A004343F0 /* UIView+Geometry.m in Sources */ = {isa = PBXBuildFile; fileRef = FAE4191C1BCA891A004343F0 /* UIView+Geometry.m */; settings = {ASSET_TAGS = (); }; };
+		FAE419471BCA891A004343F0 /* Constants.m in Sources */ = {isa = PBXBuildFile; fileRef = FAE4191F1BCA891A004343F0 /* Constants.m */; settings = {ASSET_TAGS = (); }; };
+		FAE419481BCA891A004343F0 /* BaseViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FAE419221BCA891A004343F0 /* BaseViewController.m */; settings = {ASSET_TAGS = (); }; };
+		FAE419491BCA891A004343F0 /* GameViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FAE419241BCA891A004343F0 /* GameViewController.m */; settings = {ASSET_TAGS = (); }; };
+		FAE4194A1BCA891A004343F0 /* GameViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = FAE419251BCA891A004343F0 /* GameViewController.xib */; settings = {ASSET_TAGS = (); }; };
+		FAE4194B1BCA891A004343F0 /* AIPlayer.m in Sources */ = {isa = PBXBuildFile; fileRef = FAE419281BCA891A004343F0 /* AIPlayer.m */; settings = {ASSET_TAGS = (); }; };
+		FAE4194C1BCA891A004343F0 /* Card.m in Sources */ = {isa = PBXBuildFile; fileRef = FAE4192A1BCA891A004343F0 /* Card.m */; settings = {ASSET_TAGS = (); }; };
+		FAE4194D1BCA891A004343F0 /* Deck.m in Sources */ = {isa = PBXBuildFile; fileRef = FAE4192C1BCA891A004343F0 /* Deck.m */; settings = {ASSET_TAGS = (); }; };
+		FAE4194E1BCA891A004343F0 /* Hand.m in Sources */ = {isa = PBXBuildFile; fileRef = FAE4192E1BCA891A004343F0 /* Hand.m */; settings = {ASSET_TAGS = (); }; };
+		FAE4194F1BCA891A004343F0 /* HumanPlayer.m in Sources */ = {isa = PBXBuildFile; fileRef = FAE419301BCA891A004343F0 /* HumanPlayer.m */; settings = {ASSET_TAGS = (); }; };
+		FAE419501BCA891A004343F0 /* Model.m in Sources */ = {isa = PBXBuildFile; fileRef = FAE419321BCA891A004343F0 /* Model.m */; settings = {ASSET_TAGS = (); }; };
+		FAE419511BCA891A004343F0 /* Player.m in Sources */ = {isa = PBXBuildFile; fileRef = FAE419341BCA891A004343F0 /* Player.m */; settings = {ASSET_TAGS = (); }; };
+		FAE419521BCA891A004343F0 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FAE419361BCA891A004343F0 /* Images.xcassets */; settings = {ASSET_TAGS = (); }; };
+		FAE419541BCA891A004343F0 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = FAE4193A1BCA891A004343F0 /* InfoPlist.strings */; settings = {ASSET_TAGS = (); }; };
+		FAE419551BCA891A004343F0 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = FAE4193C1BCA891A004343F0 /* main.m */; settings = {ASSET_TAGS = (); }; };
+		FAE419561BCA891A004343F0 /* CardView.m in Sources */ = {isa = PBXBuildFile; fileRef = FAE4193F1BCA891A004343F0 /* CardView.m */; settings = {ASSET_TAGS = (); }; };
+		FAE419571BCA891A004343F0 /* DeckView.m in Sources */ = {isa = PBXBuildFile; fileRef = FAE419411BCA891A004343F0 /* DeckView.m */; settings = {ASSET_TAGS = (); }; };
+		FAE419581BCA891A004343F0 /* GameView.m in Sources */ = {isa = PBXBuildFile; fileRef = FAE419431BCA891A004343F0 /* GameView.m */; settings = {ASSET_TAGS = (); }; };
+		FAE419591BCA891A004343F0 /* HandView.m in Sources */ = {isa = PBXBuildFile; fileRef = FAE419451BCA891A004343F0 /* HandView.m */; settings = {ASSET_TAGS = (); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		100EA4DD1A00C36400DF1413 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		5A36ECF8181160650095CD38 /* DurakMobile.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DurakMobile.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		5A36ECFB181160650095CD38 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		5A36ECFD181160650095CD38 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
 		5A36ECFF181160650095CD38 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
-		5A36ED03181160650095CD38 /* DurakMobile-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "DurakMobile-Info.plist"; sourceTree = "<group>"; };
-		5A36ED05181160650095CD38 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
-		5A36ED07181160650095CD38 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
-		5A36ED09181160650095CD38 /* DurakMobile-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "DurakMobile-Prefix.pch"; sourceTree = "<group>"; };
 		5A36ED0A181160650095CD38 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		5A36ED0B181160650095CD38 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
 		5A36ED14181160650095CD38 /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
-		5A36ED2E181160FA0095CD38 /* Player.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Player.h; path = Model/Player.h; sourceTree = "<group>"; };
-		5A36ED2F181160FA0095CD38 /* Player.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = Player.m; path = Model/Player.m; sourceTree = "<group>"; };
-		5A36ED321811617C0095CD38 /* Hand.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Hand.h; path = Model/Hand.h; sourceTree = "<group>"; };
-		5A36ED331811617C0095CD38 /* Hand.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = Hand.m; path = Model/Hand.m; sourceTree = "<group>"; };
-		5A36ED36181161C60095CD38 /* AIPlayer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = AIPlayer.h; path = Model/AIPlayer.h; sourceTree = "<group>"; };
-		5A36ED37181161C60095CD38 /* AIPlayer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = AIPlayer.m; path = Model/AIPlayer.m; sourceTree = "<group>"; };
-		5A36ED3A1811637A0095CD38 /* Card.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Card.h; path = Model/Card.h; sourceTree = "<group>"; };
-		5A36ED3B1811637A0095CD38 /* Card.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = Card.m; path = Model/Card.m; sourceTree = "<group>"; };
-		5A36ED3E181165680095CD38 /* Deck.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Deck.h; path = Model/Deck.h; sourceTree = "<group>"; };
-		5A36ED3F181165680095CD38 /* Deck.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = Deck.m; path = Model/Deck.m; sourceTree = "<group>"; };
-		5A36ED42181167D10095CD38 /* CardView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = CardView.h; path = View/CardView.h; sourceTree = "<group>"; };
-		5A36ED43181167D10095CD38 /* CardView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = CardView.m; path = View/CardView.m; sourceTree = "<group>"; };
-		5A36ED461811690F0095CD38 /* Constants.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Constants.h; path = Resources/Constants.h; sourceTree = "<group>"; };
-		5A36ED471811690F0095CD38 /* Constants.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = Constants.m; path = Resources/Constants.m; sourceTree = "<group>"; };
-		5A36ED4A18116A0A0095CD38 /* DeckView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = DeckView.h; path = View/DeckView.h; sourceTree = "<group>"; };
-		5A36ED4B18116A0A0095CD38 /* DeckView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = DeckView.m; path = View/DeckView.m; sourceTree = "<group>"; };
-		5A36ED4F18116DC70095CD38 /* UIView+Geometry.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "UIView+Geometry.h"; path = "Categories/UIView+Geometry.h"; sourceTree = "<group>"; };
-		5A36ED5018116DC70095CD38 /* UIView+Geometry.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = "UIView+Geometry.m"; path = "Categories/UIView+Geometry.m"; sourceTree = "<group>"; };
-		5A36ED5318116EB20095CD38 /* Model.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Model.h; path = Model/Model.h; sourceTree = "<group>"; };
-		5A36ED5418116EB20095CD38 /* Model.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = Model.m; path = Model/Model.m; sourceTree = "<group>"; };
-		5A36ED57181171F40095CD38 /* HumanPlayer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = HumanPlayer.h; path = Model/HumanPlayer.h; sourceTree = "<group>"; };
-		5A36ED58181171F40095CD38 /* HumanPlayer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = HumanPlayer.m; path = Model/HumanPlayer.m; sourceTree = "<group>"; };
-		5A36ED5A181175780095CD38 /* GameViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = GameViewController.h; path = Controllers/GameViewController.h; sourceTree = "<group>"; };
-		5A36ED5B181175780095CD38 /* GameViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = GameViewController.m; path = Controllers/GameViewController.m; sourceTree = "<group>"; };
-		5A36ED5F181175970095CD38 /* BaseViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = BaseViewController.h; path = Controllers/BaseViewController.h; sourceTree = "<group>"; };
-		5A36ED60181175970095CD38 /* BaseViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = BaseViewController.m; path = Controllers/BaseViewController.m; sourceTree = "<group>"; };
-		5A36ED62181175B60095CD38 /* GameViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = GameViewController.xib; path = Controllers/GameViewController.xib; sourceTree = "<group>"; };
-		5A36ED6518117A010095CD38 /* HandView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = HandView.h; path = View/HandView.h; sourceTree = "<group>"; };
-		5A36ED6618117A010095CD38 /* HandView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = HandView.m; path = View/HandView.m; sourceTree = "<group>"; };
-		FA2D8B1B181246D6003597EC /* GameView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = GameView.h; path = View/GameView.h; sourceTree = "<group>"; };
-		FA2D8B1C181246D6003597EC /* GameView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = GameView.m; path = View/GameView.m; sourceTree = "<group>"; };
+		FAE4191B1BCA891A004343F0 /* UIView+Geometry.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+Geometry.h"; sourceTree = "<group>"; };
+		FAE4191C1BCA891A004343F0 /* UIView+Geometry.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+Geometry.m"; sourceTree = "<group>"; };
+		FAE4191E1BCA891A004343F0 /* Constants.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Constants.h; sourceTree = "<group>"; };
+		FAE4191F1BCA891A004343F0 /* Constants.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Constants.m; sourceTree = "<group>"; };
+		FAE419211BCA891A004343F0 /* BaseViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BaseViewController.h; sourceTree = "<group>"; };
+		FAE419221BCA891A004343F0 /* BaseViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BaseViewController.m; sourceTree = "<group>"; };
+		FAE419231BCA891A004343F0 /* GameViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GameViewController.h; sourceTree = "<group>"; };
+		FAE419241BCA891A004343F0 /* GameViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GameViewController.m; sourceTree = "<group>"; };
+		FAE419251BCA891A004343F0 /* GameViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = GameViewController.xib; sourceTree = "<group>"; };
+		FAE419271BCA891A004343F0 /* AIPlayer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AIPlayer.h; sourceTree = "<group>"; };
+		FAE419281BCA891A004343F0 /* AIPlayer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AIPlayer.m; sourceTree = "<group>"; };
+		FAE419291BCA891A004343F0 /* Card.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Card.h; sourceTree = "<group>"; };
+		FAE4192A1BCA891A004343F0 /* Card.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Card.m; sourceTree = "<group>"; };
+		FAE4192B1BCA891A004343F0 /* Deck.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Deck.h; sourceTree = "<group>"; };
+		FAE4192C1BCA891A004343F0 /* Deck.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Deck.m; sourceTree = "<group>"; };
+		FAE4192D1BCA891A004343F0 /* Hand.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Hand.h; sourceTree = "<group>"; };
+		FAE4192E1BCA891A004343F0 /* Hand.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Hand.m; sourceTree = "<group>"; };
+		FAE4192F1BCA891A004343F0 /* HumanPlayer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HumanPlayer.h; sourceTree = "<group>"; };
+		FAE419301BCA891A004343F0 /* HumanPlayer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HumanPlayer.m; sourceTree = "<group>"; };
+		FAE419311BCA891A004343F0 /* Model.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Model.h; sourceTree = "<group>"; };
+		FAE419321BCA891A004343F0 /* Model.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Model.m; sourceTree = "<group>"; };
+		FAE419331BCA891A004343F0 /* Player.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Player.h; sourceTree = "<group>"; };
+		FAE419341BCA891A004343F0 /* Player.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Player.m; sourceTree = "<group>"; };
+		FAE419361BCA891A004343F0 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		FAE419381BCA891A004343F0 /* DurakMobile-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "DurakMobile-Info.plist"; sourceTree = "<group>"; };
+		FAE419391BCA891A004343F0 /* DurakMobile-Prefix.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "DurakMobile-Prefix.pch"; sourceTree = "<group>"; };
+		FAE4193B1BCA891A004343F0 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		FAE4193C1BCA891A004343F0 /* main.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		FAE4193E1BCA891A004343F0 /* CardView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CardView.h; sourceTree = "<group>"; };
+		FAE4193F1BCA891A004343F0 /* CardView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CardView.m; sourceTree = "<group>"; };
+		FAE419401BCA891A004343F0 /* DeckView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DeckView.h; sourceTree = "<group>"; };
+		FAE419411BCA891A004343F0 /* DeckView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DeckView.m; sourceTree = "<group>"; };
+		FAE419421BCA891A004343F0 /* GameView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GameView.h; sourceTree = "<group>"; };
+		FAE419431BCA891A004343F0 /* GameView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GameView.m; sourceTree = "<group>"; };
+		FAE419441BCA891A004343F0 /* HandView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HandView.h; sourceTree = "<group>"; };
+		FAE419451BCA891A004343F0 /* HandView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HandView.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -125,196 +125,180 @@
 			children = (
 				5A36ED0A181160650095CD38 /* AppDelegate.h */,
 				5A36ED0B181160650095CD38 /* AppDelegate.m */,
-				5A36ED4D18116DAE0095CD38 /* 3rdParty */,
-				5A36ED2C181160900095CD38 /* Model */,
-				5A36ED2B1811608C0095CD38 /* View */,
-				5A36ED2A181160860095CD38 /* Controller */,
-				5A36ED02181160650095CD38 /* Supporting Files */,
+				FAE419261BCA891A004343F0 /* Model */,
+				FAE4193D1BCA891A004343F0 /* View */,
+				FAE419201BCA891A004343F0 /* Controllers */,
+				FAE4191A1BCA891A004343F0 /* Categories */,
+				FAE4191D1BCA891A004343F0 /* Common */,
+				FAE419351BCA891A004343F0 /* Resources */,
+				FAE419371BCA891A004343F0 /* SupportingFiles */,
 			);
 			path = DurakMobile;
 			sourceTree = "<group>";
 		};
-		5A36ED02181160650095CD38 /* Supporting Files */ = {
+		FAE4191A1BCA891A004343F0 /* Categories */ = {
 			isa = PBXGroup;
 			children = (
-				100EA4DD1A00C36400DF1413 /* Images.xcassets */,
-				5A36ED45181168F20095CD38 /* Resorces */,
-				5A36ED03181160650095CD38 /* DurakMobile-Info.plist */,
-				5A36ED04181160650095CD38 /* InfoPlist.strings */,
-				5A36ED07181160650095CD38 /* main.m */,
-				5A36ED09181160650095CD38 /* DurakMobile-Prefix.pch */,
+				FAE4191B1BCA891A004343F0 /* UIView+Geometry.h */,
+				FAE4191C1BCA891A004343F0 /* UIView+Geometry.m */,
 			);
-			name = "Supporting Files";
+			path = Categories;
 			sourceTree = "<group>";
 		};
-		5A36ED2A181160860095CD38 /* Controller */ = {
+		FAE4191D1BCA891A004343F0 /* Common */ = {
 			isa = PBXGroup;
 			children = (
-				5A36ED5D1811757D0095CD38 /* Generic */,
-				5A36ED5A181175780095CD38 /* GameViewController.h */,
-				5A36ED5B181175780095CD38 /* GameViewController.m */,
-				5A36ED62181175B60095CD38 /* GameViewController.xib */,
+				FAE4191E1BCA891A004343F0 /* Constants.h */,
+				FAE4191F1BCA891A004343F0 /* Constants.m */,
 			);
-			name = Controller;
+			path = Common;
 			sourceTree = "<group>";
 		};
-		5A36ED2B1811608C0095CD38 /* View */ = {
+		FAE419201BCA891A004343F0 /* Controllers */ = {
 			isa = PBXGroup;
 			children = (
-				5A36ED41181167BA0095CD38 /* CardView */,
-				5A36ED49181169EB0095CD38 /* DeckView */,
-				5A36ED64181179E70095CD38 /* HandView */,
-				FA2D8B1A181246C0003597EC /* GameView */,
+				FAE419211BCA891A004343F0 /* BaseViewController.h */,
+				FAE419221BCA891A004343F0 /* BaseViewController.m */,
+				FAE419231BCA891A004343F0 /* GameViewController.h */,
+				FAE419241BCA891A004343F0 /* GameViewController.m */,
+				FAE419251BCA891A004343F0 /* GameViewController.xib */,
 			);
-			name = View;
+			path = Controllers;
 			sourceTree = "<group>";
 		};
-		5A36ED2C181160900095CD38 /* Model */ = {
+		FAE419261BCA891A004343F0 /* Model */ = {
 			isa = PBXGroup;
 			children = (
-				5A36ED5318116EB20095CD38 /* Model.h */,
-				5A36ED5418116EB20095CD38 /* Model.m */,
-				5A36ED39181163610095CD38 /* Card */,
-				5A36ED3D1811655C0095CD38 /* Deck */,
-				5A36ED2D181160980095CD38 /* Player */,
-				5A36ED311811616C0095CD38 /* Hand */,
+				FAE419311BCA891A004343F0 /* Model.h */,
+				FAE419321BCA891A004343F0 /* Model.m */,
+				FAE4195A1BCA8A48004343F0 /* Player */,
+				FAE4195D1BCA8A72004343F0 /* Card */,
+				FAE4195F1BCA8A81004343F0 /* Deck */,
+				FAE4195E1BCA8A7B004343F0 /* Hand */,
 			);
-			name = Model;
+			path = Model;
 			sourceTree = "<group>";
 		};
-		5A36ED2D181160980095CD38 /* Player */ = {
+		FAE419351BCA891A004343F0 /* Resources */ = {
 			isa = PBXGroup;
 			children = (
-				5A36ED56181171E30095CD38 /* HumanPlayer */,
-				5A36ED35181161B80095CD38 /* AIPlayer */,
-				5A36ED2E181160FA0095CD38 /* Player.h */,
-				5A36ED2F181160FA0095CD38 /* Player.m */,
+				FAE419361BCA891A004343F0 /* Images.xcassets */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		FAE419371BCA891A004343F0 /* SupportingFiles */ = {
+			isa = PBXGroup;
+			children = (
+				FAE419381BCA891A004343F0 /* DurakMobile-Info.plist */,
+				FAE419391BCA891A004343F0 /* DurakMobile-Prefix.pch */,
+				FAE4193A1BCA891A004343F0 /* InfoPlist.strings */,
+				FAE4193C1BCA891A004343F0 /* main.m */,
+			);
+			path = SupportingFiles;
+			sourceTree = "<group>";
+		};
+		FAE4193D1BCA891A004343F0 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				FAE419601BCA8C70004343F0 /* CardView */,
+				FAE419611BCA8C7B004343F0 /* DeckView */,
+				FAE419621BCA8C81004343F0 /* GameView */,
+				FAE419631BCA8C8A004343F0 /* HandView */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		FAE4195A1BCA8A48004343F0 /* Player */ = {
+			isa = PBXGroup;
+			children = (
+				FAE419331BCA891A004343F0 /* Player.h */,
+				FAE419341BCA891A004343F0 /* Player.m */,
+				FAE4195B1BCA8A59004343F0 /* AIPlayer */,
+				FAE4195C1BCA8A62004343F0 /* HumanPlayer */,
 			);
 			name = Player;
 			sourceTree = "<group>";
 		};
-		5A36ED311811616C0095CD38 /* Hand */ = {
+		FAE4195B1BCA8A59004343F0 /* AIPlayer */ = {
 			isa = PBXGroup;
 			children = (
-				5A36ED321811617C0095CD38 /* Hand.h */,
-				5A36ED331811617C0095CD38 /* Hand.m */,
-			);
-			name = Hand;
-			sourceTree = "<group>";
-		};
-		5A36ED35181161B80095CD38 /* AIPlayer */ = {
-			isa = PBXGroup;
-			children = (
-				5A36ED36181161C60095CD38 /* AIPlayer.h */,
-				5A36ED37181161C60095CD38 /* AIPlayer.m */,
+				FAE419271BCA891A004343F0 /* AIPlayer.h */,
+				FAE419281BCA891A004343F0 /* AIPlayer.m */,
 			);
 			name = AIPlayer;
 			sourceTree = "<group>";
 		};
-		5A36ED39181163610095CD38 /* Card */ = {
+		FAE4195C1BCA8A62004343F0 /* HumanPlayer */ = {
 			isa = PBXGroup;
 			children = (
-				5A36ED3A1811637A0095CD38 /* Card.h */,
-				5A36ED3B1811637A0095CD38 /* Card.m */,
-			);
-			name = Card;
-			sourceTree = "<group>";
-		};
-		5A36ED3D1811655C0095CD38 /* Deck */ = {
-			isa = PBXGroup;
-			children = (
-				5A36ED3E181165680095CD38 /* Deck.h */,
-				5A36ED3F181165680095CD38 /* Deck.m */,
-			);
-			name = Deck;
-			sourceTree = "<group>";
-		};
-		5A36ED41181167BA0095CD38 /* CardView */ = {
-			isa = PBXGroup;
-			children = (
-				5A36ED42181167D10095CD38 /* CardView.h */,
-				5A36ED43181167D10095CD38 /* CardView.m */,
-			);
-			name = CardView;
-			sourceTree = "<group>";
-		};
-		5A36ED45181168F20095CD38 /* Resorces */ = {
-			isa = PBXGroup;
-			children = (
-				5A36ED461811690F0095CD38 /* Constants.h */,
-				5A36ED471811690F0095CD38 /* Constants.m */,
-			);
-			name = Resorces;
-			sourceTree = "<group>";
-		};
-		5A36ED49181169EB0095CD38 /* DeckView */ = {
-			isa = PBXGroup;
-			children = (
-				5A36ED4A18116A0A0095CD38 /* DeckView.h */,
-				5A36ED4B18116A0A0095CD38 /* DeckView.m */,
-			);
-			name = DeckView;
-			sourceTree = "<group>";
-		};
-		5A36ED4D18116DAE0095CD38 /* 3rdParty */ = {
-			isa = PBXGroup;
-			children = (
-				5A36ED4E18116DB50095CD38 /* UIView */,
-			);
-			name = 3rdParty;
-			sourceTree = "<group>";
-		};
-		5A36ED4E18116DB50095CD38 /* UIView */ = {
-			isa = PBXGroup;
-			children = (
-				5A36ED4F18116DC70095CD38 /* UIView+Geometry.h */,
-				5A36ED5018116DC70095CD38 /* UIView+Geometry.m */,
-			);
-			name = UIView;
-			sourceTree = "<group>";
-		};
-		5A36ED56181171E30095CD38 /* HumanPlayer */ = {
-			isa = PBXGroup;
-			children = (
-				5A36ED57181171F40095CD38 /* HumanPlayer.h */,
-				5A36ED58181171F40095CD38 /* HumanPlayer.m */,
+				FAE4192F1BCA891A004343F0 /* HumanPlayer.h */,
+				FAE419301BCA891A004343F0 /* HumanPlayer.m */,
 			);
 			name = HumanPlayer;
 			sourceTree = "<group>";
 		};
-		5A36ED5D1811757D0095CD38 /* Generic */ = {
+		FAE4195D1BCA8A72004343F0 /* Card */ = {
 			isa = PBXGroup;
 			children = (
-				5A36ED5E181175830095CD38 /* BaseViewController */,
+				FAE419291BCA891A004343F0 /* Card.h */,
+				FAE4192A1BCA891A004343F0 /* Card.m */,
 			);
-			name = Generic;
+			name = Card;
 			sourceTree = "<group>";
 		};
-		5A36ED5E181175830095CD38 /* BaseViewController */ = {
+		FAE4195E1BCA8A7B004343F0 /* Hand */ = {
 			isa = PBXGroup;
 			children = (
-				5A36ED5F181175970095CD38 /* BaseViewController.h */,
-				5A36ED60181175970095CD38 /* BaseViewController.m */,
+				FAE4192D1BCA891A004343F0 /* Hand.h */,
+				FAE4192E1BCA891A004343F0 /* Hand.m */,
 			);
-			name = BaseViewController;
+			name = Hand;
 			sourceTree = "<group>";
 		};
-		5A36ED64181179E70095CD38 /* HandView */ = {
+		FAE4195F1BCA8A81004343F0 /* Deck */ = {
 			isa = PBXGroup;
 			children = (
-				5A36ED6518117A010095CD38 /* HandView.h */,
-				5A36ED6618117A010095CD38 /* HandView.m */,
+				FAE4192B1BCA891A004343F0 /* Deck.h */,
+				FAE4192C1BCA891A004343F0 /* Deck.m */,
 			);
-			name = HandView;
+			name = Deck;
 			sourceTree = "<group>";
 		};
-		FA2D8B1A181246C0003597EC /* GameView */ = {
+		FAE419601BCA8C70004343F0 /* CardView */ = {
 			isa = PBXGroup;
 			children = (
-				FA2D8B1B181246D6003597EC /* GameView.h */,
-				FA2D8B1C181246D6003597EC /* GameView.m */,
+				FAE4193E1BCA891A004343F0 /* CardView.h */,
+				FAE4193F1BCA891A004343F0 /* CardView.m */,
+			);
+			name = CardView;
+			sourceTree = "<group>";
+		};
+		FAE419611BCA8C7B004343F0 /* DeckView */ = {
+			isa = PBXGroup;
+			children = (
+				FAE419401BCA891A004343F0 /* DeckView.h */,
+				FAE419411BCA891A004343F0 /* DeckView.m */,
+			);
+			name = DeckView;
+			sourceTree = "<group>";
+		};
+		FAE419621BCA8C81004343F0 /* GameView */ = {
+			isa = PBXGroup;
+			children = (
+				FAE419421BCA891A004343F0 /* GameView.h */,
+				FAE419431BCA891A004343F0 /* GameView.m */,
 			);
 			name = GameView;
+			sourceTree = "<group>";
+		};
+		FAE419631BCA8C8A004343F0 /* HandView */ = {
+			isa = PBXGroup;
+			children = (
+				FAE419441BCA891A004343F0 /* HandView.h */,
+				FAE419451BCA891A004343F0 /* HandView.m */,
+			);
+			name = HandView;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -343,7 +327,7 @@
 		5A36ECF0181160650095CD38 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
-				LastUpgradeCheck = 0610;
+				LastUpgradeCheck = 0700;
 				ORGANIZATIONNAME = AlexChernywev;
 			};
 			buildConfigurationList = 5A36ECF3181160650095CD38 /* Build configuration list for PBXProject "DurakMobile" */;
@@ -368,9 +352,9 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				100EA4DE1A00C36400DF1413 /* Images.xcassets in Resources */,
-				5A36ED06181160650095CD38 /* InfoPlist.strings in Resources */,
-				5A36ED63181175B60095CD38 /* GameViewController.xib in Resources */,
+				FAE419541BCA891A004343F0 /* InfoPlist.strings in Resources */,
+				FAE4194A1BCA891A004343F0 /* GameViewController.xib in Resources */,
+				FAE419521BCA891A004343F0 /* Images.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -381,33 +365,33 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				5A36ED341811617C0095CD38 /* Hand.m in Sources */,
-				5A36ED61181175970095CD38 /* BaseViewController.m in Sources */,
-				5A36ED40181165680095CD38 /* Deck.m in Sources */,
-				5A36ED5C181175780095CD38 /* GameViewController.m in Sources */,
-				5A36ED44181167D10095CD38 /* CardView.m in Sources */,
-				FA2D8B1D181246D6003597EC /* GameView.m in Sources */,
-				5A36ED5518116EB20095CD38 /* Model.m in Sources */,
+				FAE419551BCA891A004343F0 /* main.m in Sources */,
+				FAE419501BCA891A004343F0 /* Model.m in Sources */,
+				FAE419571BCA891A004343F0 /* DeckView.m in Sources */,
+				FAE4194F1BCA891A004343F0 /* HumanPlayer.m in Sources */,
+				FAE4194D1BCA891A004343F0 /* Deck.m in Sources */,
+				FAE4194B1BCA891A004343F0 /* AIPlayer.m in Sources */,
+				FAE419511BCA891A004343F0 /* Player.m in Sources */,
+				FAE419561BCA891A004343F0 /* CardView.m in Sources */,
+				FAE419491BCA891A004343F0 /* GameViewController.m in Sources */,
+				FAE419461BCA891A004343F0 /* UIView+Geometry.m in Sources */,
+				FAE419581BCA891A004343F0 /* GameView.m in Sources */,
+				FAE419481BCA891A004343F0 /* BaseViewController.m in Sources */,
 				5A36ED0C181160650095CD38 /* AppDelegate.m in Sources */,
-				5A36ED5118116DC70095CD38 /* UIView+Geometry.m in Sources */,
-				5A36ED481811690F0095CD38 /* Constants.m in Sources */,
-				5A36ED38181161C60095CD38 /* AIPlayer.m in Sources */,
-				5A36ED30181160FA0095CD38 /* Player.m in Sources */,
-				5A36ED6718117A010095CD38 /* HandView.m in Sources */,
-				5A36ED4C18116A0A0095CD38 /* DeckView.m in Sources */,
-				5A36ED08181160650095CD38 /* main.m in Sources */,
-				5A36ED3C1811637A0095CD38 /* Card.m in Sources */,
-				5A36ED59181171F40095CD38 /* HumanPlayer.m in Sources */,
+				FAE419591BCA891A004343F0 /* HandView.m in Sources */,
+				FAE4194E1BCA891A004343F0 /* Hand.m in Sources */,
+				FAE4194C1BCA891A004343F0 /* Card.m in Sources */,
+				FAE419471BCA891A004343F0 /* Constants.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXVariantGroup section */
-		5A36ED04181160650095CD38 /* InfoPlist.strings */ = {
+		FAE4193A1BCA891A004343F0 /* InfoPlist.strings */ = {
 			isa = PBXVariantGroup;
 			children = (
-				5A36ED05181160650095CD38 /* en */,
+				FAE4193B1BCA891A004343F0 /* en */,
 			);
 			name = InfoPlist.strings;
 			sourceTree = "<group>";
@@ -433,6 +417,7 @@
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				COPY_PHASE_STRIP = NO;
+				ENABLE_TESTABILITY = YES;
 				GCC_C_LANGUAGE_STANDARD = gnu99;
 				GCC_DYNAMIC_NO_PIC = NO;
 				GCC_OPTIMIZATION_LEVEL = 0;
@@ -491,8 +476,8 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
-				GCC_PREFIX_HEADER = "DurakMobile/DurakMobile-Prefix.pch";
-				INFOPLIST_FILE = "DurakMobile/DurakMobile-Info.plist";
+				GCC_PREFIX_HEADER = "DurakMobile/SupportingFiles/DurakMobile-Prefix.pch";
+				INFOPLIST_FILE = "$(SRCROOT)/DurakMobile/SupportingFiles/DurakMobile-Info.plist";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				WRAPPER_EXTENSION = app;
 			};
@@ -504,8 +489,8 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
-				GCC_PREFIX_HEADER = "DurakMobile/DurakMobile-Prefix.pch";
-				INFOPLIST_FILE = "DurakMobile/DurakMobile-Info.plist";
+				GCC_PREFIX_HEADER = "DurakMobile/SupportingFiles/DurakMobile-Prefix.pch";
+				INFOPLIST_FILE = "$(SRCROOT)/DurakMobile/SupportingFiles/DurakMobile-Info.plist";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				WRAPPER_EXTENSION = app;
 			};

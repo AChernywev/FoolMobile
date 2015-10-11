@@ -10,15 +10,14 @@
 
 @implementation UIView (Geometry)
 
-- (CGPoint) boundsCenter
+- (CGPoint)boundsCenter
 {
     CGRect  bounds = self.bounds;
     CGPoint center = CGPointMake(CGRectGetMidX(bounds), CGRectGetMidY(bounds));
     return [self convertPoint: center toView: self.superview];
 }
 
-
-- (void) setBoundsCenter: (CGPoint) boundsCenter
+- (void)setBoundsCenter:(CGPoint)boundsCenter
 {
     CGRect  bounds  = self.bounds;
     CGPoint anchor  = self.layer.anchorPoint;

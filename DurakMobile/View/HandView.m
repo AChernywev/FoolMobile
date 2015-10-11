@@ -8,71 +8,74 @@
 
 #import "HandView.h"
 
+@interface HandView()
+@property (nonatomic, assign) CGFloat angle;
+@property (nonatomic, assign) CGFloat scale;
+
+@property (nonatomic, strong) NSMutableArray *  cardViews;
+@property (nonatomic, strong) NSIndexPath *     emptyIndexPath;
+@property (nonatomic, strong) NSMutableSet *    selectedCardViews;
+
+@end
+
 @implementation HandView
-{
-    NSMutableArray *    _cardViews;
-    NSIndexPath *       _emptyIndexPath;
-    
-    NSMutableSet *      _selectedCardViews;
-}
 
 #pragma mark - initialization methods
-- (id) init
+- (id)initWithFrame:(CGRect)frame
 {
-    self = [super init];
+    self = [super initWithFrame:frame];
     if (self != nil) {
         [self setup];
     }
     return self;
 }
 
-- (id) initWithCoder: (NSCoder *) aDecoder
+- (id)initWithCoder:(NSCoder *)aDecoder
 {
-    self = [super initWithCoder: aDecoder];
+    self = [super initWithCoder:aDecoder];
     if (self != nil)  {
         [self setup];
     }
     return self;
 }
 
-- (void) setup
+- (void)setup
 {
-    _cardViews = [NSMutableArray array];
-    _selectedCardViews = [NSMutableSet set];
-    _scale = 1.0;
-    _angle = 0.0;
+    self.cardViews = [NSMutableArray array];
+    self.selectedCardViews = [NSMutableSet set];
+    self.scale = 1.0;
+    self.angle = 0.0;
 }
 
 #pragma mark - properties
-- (void) setAngle: (CGFloat) angle
+- (void)setAngle:(CGFloat)angle
 {
     _angle = angle;
     [self setNeedsLayout];
     [self layoutIfNeeded];
 }
 
-- (void) setCardsState: (CardViewState) cardsState
+- (void)setCardsState:(CardViewState)cardsState
 {
     _cardsState = cardsState;
     
-    for (CardView *cardView in _cardViews)
-    {
+    for (CardView *cardView in self.cardViews) {
         cardView.state = cardsState;
     }
 }
 
 #pragma mark - public methods
-- (CardView *) cardViewAtIndex: (NSUInteger) index
+- (CardView *)cardViewAtIndex:(NSUInteger)index
 {
-    if(index < _cardViews.count) {
-        return _cardViews[index];
+    if(index < self.cardViews.count) {
+        return self.cardViews[index];
     }
     else {
         return nil;
     }
 }
 
-- (void) reloadData
+- (void)reloadData
 {
     [self removeAllCardViews];
     
@@ -81,18 +84,17 @@
     
     NSUInteger count = [self.dataSource numberOfCardsInHandView:self];
     
-    for (NSUInteger i = 0; i < count; ++i)
-    {
-        CardView *cardView = [self.dataSource handView: self cardViewAtIndex: i];
+    for (NSUInteger i = 0; i < count; ++i) {
+        CardView *cardView = [self.dataSource handView:self cardViewAtIndex:i];
         [cardView layoutIfNeeded];
         
         // Data source must return a non-nil card view.
         NSParameterAssert(cardView);
         
         cardView.layer.anchorPoint = CGPointMake(0.5, 1.5);
-        cardView.state             = _cardsState;
+        cardView.state             = self.cardsState;
         
-        [_cardViews addObject:cardView];
+        [self.cardViews addObject:cardView];
         [self addSubview: cardView];
     }
     [self setNeedsLayout];
@@ -100,15 +102,14 @@
 }
 
 #pragma mark - private methods
-- (void) removeAllCardViews
+- (void)removeAllCardViews
 {
-    [_cardViews makeObjectsPerformSelector: @selector(removeFromSuperview)];
-    [_cardViews removeAllObjects];
+    [self.cardViews makeObjectsPerformSelector: @selector(removeFromSuperview)];
+    [self.cardViews removeAllObjects];
 }
 
 #pragma mark - a
-- (BOOL) pointInside: (CGPoint)   point
-           withEvent: (UIEvent *) event
+- (BOOL)pointInside:(CGPoint)point withEvent:(UIEvent *)event
 {
     // Hand view itself is used only as a container for card views so it should
     // not handle any touches other than touches affecting the card views.
@@ -116,64 +117,56 @@
     // Note that we don't check that the point is within hand view's bounds.
     // This is deliberate since we expect to drag cards outside of the hand view.
     
-    for (UIView *cardView in _cardViews)
-    {
+    for (UIView *cardView in self.cardViews) {
         CGPoint localPoint = [self convertPoint: point toView: cardView];
         if ([cardView pointInside: localPoint withEvent: event]) return YES;
     }
-    
     return NO;
 }
 
-#pragma mark -
-#pragma mark layout
-
-- (void) layoutSubviews
+#pragma mark - layout
+- (void)layoutSubviews
 {
-    CGRect     bounds        = self.bounds;
+    CGRect bounds = self.bounds;
     NSInteger  cardViewIndex = 0;
     
-    CGFloat offsetY     = 0;
+    CGFloat offsetY = 0;
     CGPoint anchorPoint = CGPointMake(0.5, 1.5);
-    CGPoint origin      = CGPointMake(CGRectGetMidX(bounds), CGRectGetMaxY(bounds));
+    CGPoint origin = CGPointMake(CGRectGetMidX(bounds), CGRectGetMaxY(bounds));
     
     NSUInteger count = [self.dataSource numberOfCardsInHandView:self];
     CGFloat deltaAngle = [Constants handViewCardsDeltaAngleForCardsCount:count];
-    CGFloat offsetX    = [Constants handViewCardsOffsetXForCardsCount:count];
+    CGFloat offsetX = [Constants handViewCardsOffsetXForCardsCount:count];
     
     for (NSUInteger i = 0; i < count; ++i)
     {
         CardView *cardView = [self cardViewAtIndex: i];
         
-        if (![_selectedCardViews containsObject:cardView])
-        {
+        if (![self.selectedCardViews containsObject:cardView]) {
             float num = i - (count-1) / 2.0;
             
             cardView.layer.anchorPoint = anchorPoint;
             cardView.center =
-            CGPointMake(origin.x + (num * offsetX * cos(_angle) + offsetY * sin(_angle)) * _scale,
-                        origin.y + (num * offsetX * sin(_angle) + offsetY * cos(_angle)) * _scale);
+            CGPointMake(origin.x + (num * offsetX * cos(self.angle) + offsetY * sin(self.angle)) * self.scale,
+                        origin.y + (num * offsetX * sin(self.angle) + offsetY * cos(self.angle)) * self.scale);
             
             CGAffineTransform transform = CGAffineTransformIdentity;
             
-            transform = CGAffineTransformScale(transform, _scale, _scale);
-            transform = CGAffineTransformRotate(transform, num * deltaAngle + _angle);
+            transform = CGAffineTransformScale(transform, self.scale, self.scale);
+            transform = CGAffineTransformRotate(transform, num * deltaAngle + self.angle);
             
             cardView.transform = transform;
         }
         
-        if ((int)(_angle/M_PI_2) % 2 == 0)
+        if ((int)(self.angle/M_PI_2) % 2 == 0)
             [self bringSubviewToFront: cardView];
         else
             [self sendSubviewToBack: cardView];
         
         cardViewIndex++;
-        
-        #warning TODO check it
-        //            if (cardViewIndex >= _cardViews.count) break;
     }
     
-    for (CardView *cv in _selectedCardViews){
+    for (CardView *cv in self.selectedCardViews){
         [self bringSubviewToFront: cv];
     }
 }

@@ -6,9 +6,7 @@
 //  Copyright (c) 2013 AlexChernywev. All rights reserved.
 //
 
-
-
 @interface UIView (Geometry)
-@property (assign, nonatomic) CGPoint boundsCenter;
+@property (nonatomic, assign) CGPoint boundsCenter;
 
 @end

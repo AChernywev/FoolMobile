@@ -8,22 +8,20 @@
 
 #import "Model.h"
 
-@implementation Model
+@interface Model ()
+@property (nonatomic, readwrite) AIPlayer *      aiPlayer;
+@property (nonatomic, readwrite) HumanPlayer *   humanPlayer;
+@property (nonatomic, readwrite) Deck *          deck;
 
-#pragma mark - initialization
-- (id)init
-{
-    self = [super init];
-    if(self) {
-    }
-    return self;
-}
+@end
+
+@implementation Model
 
 #pragma mark - public methods
 - (void)beginNewGame
 {
-    _aiPlayer = [AIPlayer new];
-    _humanPlayer = [HumanPlayer new];
+    self.aiPlayer = [AIPlayer new];
+    self.humanPlayer = [HumanPlayer new];
     [self resetDeck];
     [self dealCards];
 }
@@ -31,24 +29,23 @@
 #pragma mark - private methods
 - (void) resetDeck
 {
-    _deck     = [Deck standardDeck];
-    [_deck shuffle];
+    self.deck = [Deck standardDeck];
+    [self.deck shuffle];
 }
 
 - (void) dealCards
 {
-    [_aiPlayer.hand     removeAllCards];
-    [_humanPlayer.hand  removeAllCards];
+    [self.aiPlayer.hand removeAllCards];
+    [self.humanPlayer.hand removeAllCards];
     
     NSUInteger numberOfCardsToDeal = [Constants numberOfCardsToDeal];
     
-    for (NSUInteger cardIndex = 0; cardIndex < numberOfCardsToDeal; ++cardIndex)
-    {
-        [_aiPlayer.hand addCard:    [self.deck popTopCard]];
-        [_humanPlayer.hand addCard: [self.deck popTopCard]];
+    for (NSUInteger cardIndex = 0; cardIndex < numberOfCardsToDeal; ++cardIndex) {
+        [self.aiPlayer.hand addCard: [self.deck popTopCard]];
+        [self.humanPlayer.hand addCard: [self.deck popTopCard]];
     }
     
-    [_humanPlayer.hand sortBySuitAndValue];
+    [self.humanPlayer.hand sortBySuitAndValue];
 }
 
 @end

@@ -12,27 +12,23 @@
 @class DeckView;
 
 @protocol DeckViewDataSource <NSObject>
-@required
 
-- (NSUInteger) numberOfCardsInDeckView: (DeckView *) deckView;
-
-- (CardView *) deckView: (DeckView *) deckView cardViewAtIndex: (NSUInteger) index;
+- (NSUInteger)numberOfCardsInDeckView:(DeckView *)deckView;
+- (CardView *)deckView:(DeckView *)deckView cardViewAtIndex:(NSUInteger)index;
 @end
 
 @protocol DeckViewDelegate <NSObject>
-@required
 
-- (void) deckViewDidSelectTopCard: (DeckView *) deckView;
-
+- (void)deckViewDidSelectTopCard:(DeckView *)deckView;
 @end
 
 @interface DeckView : UIView
-@property (weak,   nonatomic) IBOutlet id<DeckViewDataSource> dataSource;
-@property (weak,   nonatomic) IBOutlet id<DeckViewDelegate>   delegate;
+@property (weak, nonatomic) IBOutlet id<DeckViewDataSource> dataSource;
+@property (weak, nonatomic) IBOutlet id<DeckViewDelegate>   delegate;
 
 @property (assign, nonatomic) CardViewState cardsState;
 @property (assign, nonatomic) BOOL          showCount;
 @property (assign, nonatomic) BOOL          openBottomCard;
 
-- (void) reloadData;
+- (void)reloadData;
 @end

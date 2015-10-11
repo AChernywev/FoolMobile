@@ -37,7 +37,7 @@
         
         _countLabel                     = [UILabel new];
         _countLabel.backgroundColor     = [UIColor clearColor];
-        _countLabel.textColor           = [UIColor redColor];
+        _countLabel.textColor           = [UIColor blackColor];
         _countLabel.font                = [Constants deckViewCardCountFont];
         _countLabel.textAlignment       = NSTextAlignmentRight;
         _countLabel.layer.shadowColor   = [UIColor whiteColor].CGColor;
@@ -90,7 +90,7 @@
         [_cardViews addObject: cardView];
     }
     
-    _countLabel.text = [NSString stringWithFormat: @"%d", count];
+    _countLabel.text = [NSString stringWithFormat: @"%@", @(count).stringValue];
     
     [self setNeedsLayout];
     [self layoutIfNeeded];
@@ -119,7 +119,7 @@
             cardView.state     = CardViewStateOpen;
             cardView.transform = CGAffineTransformRotate(cardView.transform, -M_PI / 180.0 * 5.0);
             
-            cardView.center = CGPointMake(cardView.center.x - CGRectGetWidth(cardView.bounds) / 8.0, cardView.center.y);
+            cardView.center = CGPointMake(cardView.center.x - CGRectGetWidth(cardView.bounds) / 6.0, cardView.center.y - 3);
         }
     }];
     

@@ -11,14 +11,13 @@
 #import "CardView.h"
 
 #pragma mark - typedefs
-typedef enum
+typedef NS_ENUM(NSInteger, CardSuit)
 {
     kCardSuitSpades,
     kCardSuitHearts,
     kCardSuitClubs,
     kCardSuitDiamonds
-}
-CardSuit;
+};
 
 #pragma mark - Constants
 

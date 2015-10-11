@@ -21,12 +21,10 @@
 
 @interface HandView : UIView
 @property (weak, nonatomic) IBOutlet id<HandViewDataSource> dataSource;
-@property (assign, nonatomic) CGFloat angle;
-@property (assign, nonatomic) CGFloat scale;
 @property (assign, nonatomic) CardViewState cardsState;
 
+- (CardView *) cardViewAtIndex: (NSUInteger) index;
 /** Clears the hand view and reloads all its views. This is done without animation.s
  */
-- (CardView *) cardViewAtIndex: (NSUInteger) index;
 - (void) reloadData;
 @end

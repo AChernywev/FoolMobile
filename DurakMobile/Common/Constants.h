@@ -30,9 +30,6 @@
 + (CGFloat) handViewCardsOffsetXForCardsCount:(NSUInteger)cardsCount;
 + (CGFloat) handViewCardsDeltaAngleForCardsCount:(NSUInteger)cardsCount;
 
-//+ (CGFloat) aiPlayerHandViewScale;
-//+ (CGFloat) aiPlayerHandViewOffset;
-
 #pragma mark - Game
 + (NSUInteger) numberOfCardsToDeal;
 @end

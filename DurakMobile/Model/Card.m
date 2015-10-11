@@ -38,14 +38,12 @@
     return [UIImage imageNamed:[self cardImageName]];
 }
 #pragma mark - Private
-
-- (NSString *) cardImageName
+- (NSString *)cardImageName
 {
     static NSDictionary *cardValueTitles = nil;
     static NSDictionary *cardSuitTitles  = nil;
     
-    if (cardValueTitles == nil)
-    {
+    if (cardValueTitles == nil) {
         cardValueTitles = @{@(2)  : @"2",
                             @(3)  : @"3",
                             @(4)  : @"4",
@@ -61,14 +59,13 @@
                             @(14) : @"A"};
     }
     
-    if (cardSuitTitles == nil)
-    {
+    if (cardSuitTitles == nil) {
         cardSuitTitles = @{@(kCardSuitClubs)    : @"C",
                            @(kCardSuitDiamonds) : @"D",
                            @(kCardSuitHearts)   : @"H",
                            @(kCardSuitSpades)   : @"S"};
     }
-    return [NSString stringWithFormat: @"%@%@", cardValueTitles[@(_cardValue)], cardSuitTitles[@(_cardSuit)]];
+    return [NSString stringWithFormat: @"%@%@", cardValueTitles[@(self.cardValue)], cardSuitTitles[@(self.cardSuit)]];
 }
 
 #pragma mark - <CardViewDataSource>
